@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mission_redeems",
+  "info": {
+    "singularName": "mission-redeem",
+    "pluralName": "mission-redeems",
+    "displayName": "mission_redeem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_mission_redeem": {
+      "type": "uid"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "mission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mission.mission"
+    }
+  }
+}

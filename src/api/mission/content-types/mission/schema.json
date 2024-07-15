@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "missions",
+  "info": {
+    "singularName": "mission",
+    "pluralName": "missions",
+    "displayName": "mission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_mission": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "period": {
+      "type": "datetime"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "waste": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::waste.waste"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wastes",
+  "info": {
+    "singularName": "waste",
+    "pluralName": "wastes",
+    "displayName": "waste"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_waste": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type_of_waste": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-of-waste.type-of-waste"
+    }
+  }
+}

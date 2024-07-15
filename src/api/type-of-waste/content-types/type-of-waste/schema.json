@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_of_wastes",
+  "info": {
+    "singularName": "type-of-waste",
+    "pluralName": "type-of-wastes",
+    "displayName": "type_of_waste"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_type_of_Waste": {
+      "type": "uid"
+    },
+    "PETE": {
+      "type": "string"
+    },
+    "PVC": {
+      "type": "string"
+    },
+    "PP": {
+      "type": "string"
+    },
+    "DHCP": {
+      "type": "string"
+    },
+    "LDPE": {
+      "type": "string"
+    }
+  }
+}

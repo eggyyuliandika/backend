@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redeem_vouchers",
+  "info": {
+    "singularName": "redeem-voucher",
+    "pluralName": "redeem-vouchers",
+    "displayName": "redeem_voucher"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_redeem_voucher": {
+      "type": "uid"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "voucher": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::voucher.voucher"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}
